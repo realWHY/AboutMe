@@ -77,8 +77,35 @@ a{
 	color:white;
 }
 
+.title-margin{
+	padding-top:2%;
+	padding-bottom:3%;
+	margin-left:5%;
+	text-align: center;
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
+}
+
 .intro-divider {
   width: 80%;
   border-top: 1px solid #ffff66;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.team-divider {
+  width: 60%;
+  border-top: 1px solid #ffff66;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.team_line{
+    color: #ff9999;
+}
+.team_line span{
+    color: #222;
+    margin:0 20px;
+}
+
+.team-image{
+	width:170px;
+	height:170px;
 }
