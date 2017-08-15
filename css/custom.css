@@ -15,7 +15,7 @@ body {
 }
 
 header.masthead {
-    background: url('../images/images.jpg') no-repeat center center;
+    background: url('../images/back1.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -108,4 +108,23 @@ a{
 .team-image{
 	width:170px;
 	height:170px;
+}
+
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	font-weight: bold;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:10px;
+	display:none;
+	background:none;
+	color:#00b33c;
+	z-index:1;
+}
+.scrollToTop:hover{
+	text-decoration:none;
 }
