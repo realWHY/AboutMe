@@ -14,13 +14,70 @@ $(function() {
 
 $(function(){
 	
+	var $scrollHeight;
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > $(".masthead").height()) {
+		$scrollHeight = $(this).scrollTop()
+		if ( $scrollHeight >= $(".masthead").height()) {
 			$('.scrollsidenav').fadeIn();
 		} else {
 			$('.scrollsidenav').fadeOut();
 		}
+		
+		
+		//about block
+		if ($scrollHeight >= $(".masthead").height()
+			&&
+			$scrollHeight < $("#about-us").height()+$(".masthead").height()
+		) 
+		{
+			$('#top').css("color","red");
+			$('#about').css("color","black");
+			$('#team').css("color","red");
+			$('#contact').css("color","red");
+			
+		}
+		
+		//team block
+		if ($scrollHeight >= $("#about-us").height()+$(".masthead").height()
+			&&
+			$scrollHeight < $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
+		) 
+		{
+			$('#top').css("color","red");
+			$('#about').css("color","red");
+			$('#team').css("color","black");
+			$('#contact').css("color","red");
+			
+		}
+		
+		//contact block
+		if ($scrollHeight >= $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
+			&&
+			$scrollHeight < $("#contact-us").height()+$("#team-member").height()+$("#about-us").height()+$(".masthead").height()
+		) 
+		{
+			$('#top').css("color","red");
+			$('#about').css("color","red");
+			$('#team').css("color","red");
+			$('#contact').css("color","black");
+			
+		}
+		
+		var $oriCss;
+		$(".scrollsidenav").hover(
+			function(){
+				$oriCss = $(this).css("color");
+				//console.log("in $oriCss",$oriCss);
+				$(this).css("color", "black");
+			}, 
+			function(){
+				//console.log("$oriCss after ",$oriCss);
+				if($oriCss !== 'rgb(0, 0, 0)'){
+					$(this).css("color", "red");
+				}
+			}
+		);
 	});
 	
 	//Click event to scroll to top

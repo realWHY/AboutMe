@@ -39,7 +39,7 @@ $(function(){
 $(function(){
 	var $button = $('i.text-land-buttion');
 	var $oriCss = $button.css("color");
-	console.log($oriCss);
+	//console.log($oriCss);
 	$('.page-scroll').hover(
 		function() {
 			$(this).find("h4,i").css("color","#000000");
