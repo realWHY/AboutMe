@@ -39,7 +39,7 @@ $(function(){
 		}
 		
 		//team block
-		if ($scrollHeight >= $("#about-us").height()+$(".masthead").height()
+		else if ($scrollHeight >= $("#about-us").height()+$(".masthead").height()
 			&&
 			$scrollHeight < $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
@@ -52,7 +52,7 @@ $(function(){
 		}
 		
 		//contact block
-		if ($scrollHeight >= $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
+		else if ($scrollHeight >= $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 			&&
 			$scrollHeight < $("#contact-us").height()+$("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
