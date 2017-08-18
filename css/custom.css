@@ -166,9 +166,10 @@ header.masthead > .overlay {
 	right:10px;
 	display:none;
 	background:none;
-	color:#0000ff;
+	color:red;
 	z-index:1;
 }
 .scrollsidenav:hover{
 	text-decoration:none;
+	color:black;
 }
