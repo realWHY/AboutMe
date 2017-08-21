@@ -77,6 +77,18 @@ h1 {
 	color:#ff1144;
 }
 
+.btn-outline-ss{
+	color:#ff1144;
+	background-color: #fff rgba(0, 0, 0, 0.9);
+	border-color: #ff1144;
+}
+
+.btn-outline-ss:hover, .btn-outline-ss:focus, .btn-outline-ss:active:hover{
+	color: #444;
+	background-color: #ffbb33;
+	border-color: red;
+}
+
 a{
 	text-decoration: none !important;
 }
@@ -166,7 +178,7 @@ header.masthead > .overlay {
 	right:10px;
 	display:none;
 	background:none;
-	color:red;
+	color:black;
 	z-index:1;
 }
 .scrollsidenav:hover{
