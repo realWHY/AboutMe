@@ -31,10 +31,10 @@ $(function(){
 			$scrollHeight < $("#about-us").height()+$(".masthead").height()
 		) 
 		{
-			$('#top').css("color","red");
-			$('#about').css("color","black");
-			$('#team').css("color","red");
-			$('#contact').css("color","red");
+			$('#top').css("color","black");
+			$('#about').css("color","#b31aff");
+			$('#team').css("color","black");
+			$('#contact').css("color","black");
 			
 		}
 		
@@ -44,10 +44,10 @@ $(function(){
 			$scrollHeight < $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
 		{
-			$('#top').css("color","red");
-			$('#about').css("color","red");
-			$('#team').css("color","black");
-			$('#contact').css("color","red");
+			$('#top').css("color","black");
+			$('#about').css("color","black");
+			$('#team').css("color","#b31aff");
+			$('#contact').css("color","black");
 			
 		}
 		
@@ -57,10 +57,10 @@ $(function(){
 			$scrollHeight < $("#contact-us").height()+$("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
 		{
-			$('#top').css("color","red");
-			$('#about').css("color","red");
-			$('#team').css("color","red");
-			$('#contact').css("color","black");
+			$('#top').css("color","black");
+			$('#about').css("color","black");
+			$('#team').css("color","black");
+			$('#contact').css("color","#b31aff");
 			
 		}
 		
@@ -69,12 +69,12 @@ $(function(){
 			function(){
 				$oriCss = $(this).css("color");
 				//console.log("in $oriCss",$oriCss);
-				$(this).css("color", "black");
+				$(this).css("color", "#b31aff");
 			}, 
 			function(){
 				//console.log("$oriCss after ",$oriCss);
 				if($oriCss !== 'rgb(0, 0, 0)'){
-					$(this).css("color", "red");
+					$(this).css("color", "black");
 				}
 			}
 		);
