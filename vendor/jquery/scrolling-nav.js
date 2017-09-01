@@ -3,7 +3,7 @@
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll,a.scrollsidenav#about,a.scrollsidenav#team,a.scrollsidenav#contact').bind('click', function(event) {
+    $('a.page-scroll,a.nav-link#about,a.nav-link#team,a.nav-link#contact').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -31,10 +31,11 @@ $(function(){
 			$scrollHeight < $("#about-us").height()+$(".masthead").height()
 		) 
 		{
+			/*$('#about-us').css("margin-top","100px");
 			$('#top').css("color","black");
 			$('#about').css("color","#b31aff");
 			$('#team').css("color","black");
-			$('#contact').css("color","black");
+			$('#contact').css("color","black");*/
 			
 		}
 		
@@ -44,10 +45,10 @@ $(function(){
 			$scrollHeight < $("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
 		{
-			$('#top').css("color","black");
+			/*$('#top').css("color","black");
 			$('#about').css("color","black");
 			$('#team').css("color","#b31aff");
-			$('#contact').css("color","black");
+			$('#contact').css("color","black");*/
 			
 		}
 		
@@ -57,10 +58,10 @@ $(function(){
 			$scrollHeight < $("#contact-us").height()+$("#team-member").height()+$("#about-us").height()+$(".masthead").height()
 		) 
 		{
-			$('#top').css("color","black");
+			/*$('#top').css("color","black");
 			$('#about').css("color","black");
 			$('#team').css("color","black");
-			$('#contact').css("color","#b31aff");
+			$('#contact').css("color","#b31aff");*/
 			
 		}
 		
@@ -81,7 +82,7 @@ $(function(){
 	});
 	
 	//Click event to scroll to top
-	$('a.scrollsidenav#top').click(function(){
+	$('a.navbar-brand#top').click(function(){
 		$('html, body').animate({scrollTop : 0},600);
 		return false;
 	});

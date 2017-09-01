@@ -25,11 +25,35 @@
 
 <body>
 	<!-- side navigation -->
-	<a href="#" class="scrollsidenav" id="top" style="top:0px;">Top</a>
+	
+	<!--<a href="#" class="scrollsidenav" id="top" style="top:0px;">Top</a>
 	<a href="#about-us" class="scrollsidenav" id="about" style="top:25px;">About Us</a>
 	<a href="#team-member" class="scrollsidenav" id="team" style="top:50px;">Team</a>
 	<a href="#contact-us" class="scrollsidenav" id="contact" style="top:75px;">Contact</a>
-    
+    -->
+	
+	<nav class="scrollsidenav navbar navbar-expand-lg navbar-light fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<a class="navbar-brand" id="top" href="#">
+				<img src="./images/logo.png" style="height:50px; padding-top:5px; padding-left:5px;" alt="">
+			</a>
+			<ul class="navbar-nav ml-auto">		
+				<li class="nav-item">
+					<a class="nav-link" id="about" href="#about-us">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="team" href="#team-member">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contact" href="#contact-us">Contact</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+	
 	<!-- landing page -->
 	<header class="masthead">
 		<div style ="position:absolute;">
