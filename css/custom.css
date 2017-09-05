@@ -11,17 +11,18 @@ body {
 }
 
 header.masthead {
-    background: url('../images/back4.jpg') no-repeat center center;
+    background: url('../realimages/header.jpeg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	height:520px;
 }
 
 header.masthead > .overlay {
     padding: 10rem 0;
     text-align: center;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.0);
 }
 
 @media (min-width: 992px) {
@@ -31,7 +32,8 @@ header.masthead > .overlay {
 }
 
 .text-heading {
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
 }
 
 h1 {
@@ -91,11 +93,18 @@ h1 {
 }
 
 .text-land-head{
+	padding-top:7%;
+	margin-left:45%;
+	font-size:7rem;
 	color:yellow/*#ffbb33*/;
 }
 
 .text-land-subhead{
-	color:yellow/*#ffbb33*/;
+	margin-left:48%;
+	margin-top:0.1%;
+	font-size:18px;
+	color:red/*#ffbb33*/;
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
 }
 
 .text-land-buttion{
@@ -124,17 +133,27 @@ a{
 
 .title-margin{
 	padding-top:2%;
-	padding-bottom:3%;
-	margin-left:5%;
+	/*padding-bottom:3%;*/
+	/*margin-left:5%;*/
 	text-align: center;
 	/*font-family:Comic Sans MS,arial,helvetica,sans-serif;*/
-	font-family:fantasy;
+	/*font-family:fantasy;*/
+	font-size:40px;
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
+}
+
+.subtitle-margin{
+	text-align: center;
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
+	font-size:18px;
+	color:gray;
 }
 
 .intro-divider {
 	position: relative;	
 	height: 3px;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(222, 222, 222, .8), rgba(0, 0, 0, 0));
+	width:30%;
+	background-image: linear-gradient(to right, rgba(255, 255, 0, 1), rgba(255, 250, 0, .8), rgba(255, 155, 0, 0));
 }
 
 .about-sec1{
