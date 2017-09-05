@@ -159,7 +159,11 @@ a{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
+}
+
+.team-back > .overlay {
+    background: rgba(0, 0, 0, 0.0);
 }
 
 .team-content{
@@ -176,14 +180,23 @@ a{
 .team_line{
     color: #ff0000;
 }
+
+.team_line > span{
+   font-size:22px;
+}
+
 .team_line span{
     color: #222;
     margin:0 20px;
 }
 
+.team_intro{
+	font-size:20px;
+}
+
 .team-image{
-	width:170px;
-	height:170px;
+	/*width:170px;
+	height:170px;*/
 	box-shadow:3px 3px 12px gray;
 }
 
@@ -250,4 +263,20 @@ video {
 
 video {
     object-fit: contain;
+}
+
+.probootstrap-animate {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.probootstrap-footer {
+  padding: 1em 0;
+  padding-bottom: 0px;
+  background: #000000;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.probootstrap-footer .probootstrap-back-to-top {
+  text-align: right;
 }
