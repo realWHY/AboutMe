@@ -80,6 +80,10 @@ h1 {
     filter:FlipV;
 }
 
+.font-comic{
+	font-family:Comic Sans MS,arial,helvetica,sans-serif;
+}
+
 .text-expanded {
     letter-spacing: 2px;
 }
@@ -102,7 +106,7 @@ h1 {
 .text-land-subhead{
 	margin-left:48%;
 	margin-top:0.1%;
-	font-size:18px;
+	font-size:20px;
 	color:red/*#ffbb33*/;
 	font-family:Comic Sans MS,arial,helvetica,sans-serif;
 }
@@ -145,7 +149,7 @@ a{
 .subtitle-margin{
 	text-align: center;
 	font-family:Comic Sans MS,arial,helvetica,sans-serif;
-	font-size:18px;
+	font-size:22px;
 	color:gray;
 }
 
