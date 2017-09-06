@@ -17,6 +17,7 @@ header.masthead {
     background-size: cover;
     -o-background-size: cover;
 	height:520px;
+	visibility: hidden
 }
 
 header.masthead > .overlay {
