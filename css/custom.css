@@ -100,12 +100,12 @@ h1 {
 .text-land-head{
 	padding-top:5%;
 	margin-left:5%;
-	font-size:7rem;
+	font-size:5rem;
 	color:yellow/*#ffbb33*/;
 }
 
 .text-land-subhead{
-	margin-left:6%;
+	margin-left:8%;
 	margin-top:0.1%;
 	font-size:20px;
 	color:red/*#ffbb33*/;
