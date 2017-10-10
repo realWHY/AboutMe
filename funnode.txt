@@ -1,0 +1,17 @@
+This project was that i first practiced building backend by Node.js. Though there were
+many server-side environment like jsp, asp, php, django ... i could choose, The reason why i 
+choose node.js is for its features like : 
+<br/>
+1.Asynchronous I/O that optimizes an application's throughput and scalability.
+<br/>
+2.Node.js is Javascript. The same language can be used on the backend and frontend.   
+  This means it breaks down the boundaries between front- and back-end development.
+<br/>
+3.built-in library to allow applications to act as a Web server without software such 
+  as Apache HTTP Server.
+<br/>
+4.Event-driven programming.
+<br/>
+I think the above features are the most attractive parts for me and i also learn how to write
+MVC structure by node.js. Though i love node.js, there are lots of advantages that other server-side 
+environment have. So in the future, i plan that i may learn PHP and Django in the future.

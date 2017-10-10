@@ -1,0 +1,7 @@
+I had learnt written android by following some books and practiced the exercises on them. But after
+i bought ipad, i thought the performance of Android is much slower and it cause me to lose much enthusiasm on Android. 
+Maybe i won't use Android Studio to write android app if not necessary in the future, but i think 
+i will use React Native in the future to write mobile apps which can cross all the platforms including Ios and 
+Android. In addition, an app written by React Native is claimed to perform like a real native app, so i
+think React Native is cool to help developer to save a lot of time to build apps on different platforms 
+without losing much performance.

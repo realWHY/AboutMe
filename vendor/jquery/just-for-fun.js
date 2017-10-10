@@ -49,3 +49,48 @@ $(function(){
 		}
 	);
 });
+
+$(function(){
+	var wrampcount=$('.wrapmcount').size();
+	console.log("wrampcount=",wrampcount);
+	var heightEach= {};
+	for(i=0;i<wrampcount;i++){
+		 console.log("i=",i);
+		 var slideHeight = 152; // px
+		 strWramp = '#wrapm'+i;
+		 strReadMore = '.read-more'+i;
+		 console.log("strWramp=",strWramp);
+		 $(strWramp).css('overflow' , 'hidden');
+		 $(strReadMore).css('text-align' , 'center');
+		 var defHeight = $(strWramp).height();
+		 heightEach[strWramp] = defHeight;
+		 console.log("heightEach=",heightEach);
+		 console.log("defHeight=",defHeight);
+		 if(defHeight >= slideHeight){
+		  $(strWramp).css('height' , slideHeight + 'px');
+		  $(strReadMore).append('<a href="#">read more &dArr;</a>');
+		  console.log(strReadMore+' '+'a');
+		  console.log('this = ',$(this));
+		  $(strReadMore+' '+'a').click(function(){
+		   readMoreNowValid = $(this).parent().attr("class");
+		   wrampNowValid = $(this).parent().prev().attr("id");
+		   var curHeight = $('#'+wrampNowValid).height();
+		   //console.log("wrampNowValid", wrampNowValid);
+		   //console.log("defHeight", heightEach['#'+wrampNowValid]);
+		   if(curHeight == slideHeight){
+			$('#'+wrampNowValid).animate({
+			 height: heightEach['#'+wrampNowValid]
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('hide &uArr;');
+		   }else{
+			console.log("wrampNowValid hide", wrampNowValid);
+			$('#'+wrampNowValid).animate({
+			 height: slideHeight
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('read more &dArr;');
+		   }
+		   return false;
+		  });  
+		 }
+	}
+});

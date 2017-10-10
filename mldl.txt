@@ -1,0 +1,11 @@
+When i first found the book <a href=" http://www2.ift.ulaval.ca/~chaib/IFT-4102-7025/public_html/Fichiers/Machine_Learning_in_Action.pdf" target="_blank">Machine Learning in Action </a> 
+and read the catalog, i think it is so cool that algorithms can classify emails or recognize handwritings
+or even predict something. It triggered my interest to dig into the content and then i gradually understood
+how machine learning works. Basically, there are three types of machine learning and deep learning.
+Classification¡BRegression which are supervised learning and Cluster which is unsupervised learning.
+After I had basic concept of how them work, i started to use scickit-learn to do some practices and searched
+some information on internet. Moreover, i started to learn the concept of deep learning, reinforce learning
+and used tensorflow, keras to make some little projects. Among all algorithms, i love convolutional neural 
+network most, because it is so cool that a model can tell what an image is! I think i'll continuously
+study AI stuff in the future!
+

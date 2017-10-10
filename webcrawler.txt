@@ -1,0 +1,9 @@
+I want to do this project in the beginning is because my colleagues sometimes forgot to order 
+bento dinners which are offered by our company. Due to this reason, i came up with an idea that
+i could write a simple code to continuously send e-mail to remind them to order bento dinners. At first,
+there was just a text which said: "Don't forget to order bento dinners", but I felt it was so boring 
+if there was just a section of text. Therefore, features like weather prediction was added, and then 
+articles scrapped from PTT(the biggest forum in Taiwan that discussing everything according to topics)
+also be added and then articles are sorted by the response numbers(also can be referred to the degree of
+popularity). Because there are information like weather prediction and discussions on PTT every day,
+i named this project WHY(Wei, Hung-Yu) NEWS.
