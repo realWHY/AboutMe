@@ -359,3 +359,179 @@
 	
 
 })();
+
+$(function(){
+  var $teamImage; //team image
+  var $oriText   // p element
+  var $oriTextContent; //p content
+  var $oriTextcss; // team image css
+  var $clickState = false; //clickstate
+  $('.team-image').unbind('click');
+  $('.team-image').click(function(){
+	
+	if($clickState == false){
+		$teamImage = $(this); 
+		var $parent = $teamImage.parent();
+		$oriText = ($parent).children("p");
+		$oriTextContent = ($oriText).text();
+		$oriTextcss = ($teamImage).css("box-shadow");
+		//console.log($oriTextcss);
+		($teamImage).css("box-shadow","0px 0px 0px gray");
+		$oriText.html("don't press!!  hurt!!");
+	}
+	
+	$clickState = true; 
+  });
+  
+  $('.team-image').hover(
+		null,
+		function() {
+			//console.log($clickState);
+			if($clickState)
+			{
+				($teamImage).css("box-shadow",$oriTextcss);
+				$oriText.html($oriTextContent);
+				$clickState = false;
+			}
+		}
+	);
+  
+});
+
+$(function(){
+	var $button = $('i.text-land-buttion');
+	var $oriCss = $button.css("color");
+	//console.log($oriCss);
+	$('.page-scroll').hover(
+		function() {
+			$(this).find("h4,i").css("color","#000000");
+		},
+		function() {
+			$(this).find("h4,i").css("color",$oriCss);
+		}
+	);
+});
+
+$(function(){
+	var wrampcount=$('.wrapmcount').size();
+	console.log("wrampcount=",wrampcount);
+	var heightEach= {};
+	for(i=0;i<wrampcount;i++){
+		 console.log("i=",i);
+		 var slideHeight = 152; // px
+		 strWramp = '#wrapm'+i;
+		 strReadMore = '.read-more'+i;
+		 console.log("strWramp=",strWramp);
+		 $(strWramp).css('overflow' , 'hidden');
+		 $(strReadMore).css('text-align' , 'center');
+		 var defHeight = $(strWramp).height();
+		 heightEach[strWramp] = defHeight;
+		 console.log("heightEach=",heightEach);
+		 console.log("defHeight=",defHeight);
+		 if(defHeight >= slideHeight){
+		  $(strWramp).css('height' , slideHeight + 'px');
+		  $(strReadMore).append('<a href="#">read more &dArr;</a>');
+		  console.log(strReadMore+' '+'a');
+		  console.log('this = ',$(this));
+		  $(strReadMore+' '+'a').click(function(){
+		   readMoreNowValid = $(this).parent().attr("class");
+		   wrampNowValid = $(this).parent().prev().attr("id");
+		   var curHeight = $('#'+wrampNowValid).height();
+		   //console.log("wrampNowValid", wrampNowValid);
+		   //console.log("defHeight", heightEach['#'+wrampNowValid]);
+		   if(curHeight == slideHeight){
+			$('#'+wrampNowValid).animate({
+			 height: heightEach['#'+wrampNowValid]
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('hide &uArr;');
+		   }else{
+			console.log("wrampNowValid hide", wrampNowValid);
+			$('#'+wrampNowValid).animate({
+			 height: slideHeight
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('read more &dArr;');
+		   }
+		   return false;
+		  });  
+		 }
+	}
+});
+
+$(function(){
+	var wrampcount=$('.wrapmcount').size();
+	console.log("wrampcount=",wrampcount);
+	var heightEach= {};
+	for(i=0;i<wrampcount;i++){
+		 console.log("i=",i);
+		 var slideHeight = 152; // px
+		 strWramp = '#wrapm'+i;
+		 strReadMore = '.read-more'+i;
+		 console.log("strWramp=",strWramp);
+		 $(strWramp).css('overflow' , 'hidden');
+		 $(strReadMore).css('text-align' , 'center');
+		 var defHeight = $(strWramp).height();
+		 heightEach[strWramp] = defHeight;
+		 console.log("heightEach=",heightEach);
+		 console.log("defHeight=",defHeight);
+		 if(defHeight >= slideHeight){
+		  $(strWramp).css('height' , slideHeight + 'px');
+		  $(strReadMore).append('<a href="#">read more &dArr;</a>');
+		  console.log(strReadMore+' '+'a');
+		  console.log('this = ',$(this));
+		  $(strReadMore+' '+'a').click(function(){
+		   readMoreNowValid = $(this).parent().attr("class");
+		   wrampNowValid = $(this).parent().prev().attr("id");
+		   var curHeight = $('#'+wrampNowValid).height();
+		   //console.log("wrampNowValid", wrampNowValid);
+		   //console.log("defHeight", heightEach['#'+wrampNowValid]);
+		   if(curHeight == slideHeight){
+			$('#'+wrampNowValid).animate({
+			 height: heightEach['#'+wrampNowValid]
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('hide &uArr;');
+		   }else{
+			console.log("wrampNowValid hide", wrampNowValid);
+			$('#'+wrampNowValid).animate({
+			 height: slideHeight
+			}, "normal");
+			$('.'+readMoreNowValid+' '+'a').html('read more &dArr;');
+		   }
+		   return false;
+		  });  
+		 }
+	}
+});
+
+//loading page
+$(function(){
+	var opts = {            
+		lines: 13, // 花瓣数目
+		length: 20, // 花瓣长度
+		width: 10, // 花瓣宽度
+		radius: 30, // 花瓣距中心半径
+		corners: 1, // 花瓣圆滑度 (0-1)
+		rotate: 0, // 花瓣旋转角度
+		direction: 1, // 花瓣旋转方向 1: 顺时针, -1: 逆时针
+		color: '#5882FA', // 花瓣颜色
+		speed: 1, // 花瓣旋转速度
+		trail: 60, // 花瓣旋转时的拖影(百分比)
+		shadow: false, // 花瓣是否显示阴影
+		hwaccel: false, //spinner 是否启用硬件加速及高速旋转            
+		className: 'spinner', // spinner css 样式名称
+		zIndex: 2e9, // spinner的z轴 (默认是2000000000)
+		top: '50%', // spinner 相对父容器Top定位 单位 px
+		left: '50%'// spinner 相对父容器Left定位 单位 px
+	};
+
+	var target = document.getElementById("myspin");  
+	var spinner = new Spinner(opts).spin(target)  
+	$(window).load(function(){
+		$('header.masthead').css({visibility: "visible"}).animate(3000);;
+		//$('header.masthead').addClass("animated");
+		//$('header.masthead').addClass("zoomIn");
+		$('#AcoSoar').addClass("animated");
+		$('#AcoSoar').addClass("zoomIn");
+		spinner.stop();
+		
+	});
+});
